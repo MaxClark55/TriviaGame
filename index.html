@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>StarWars Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col col-xs-12 col-lg-12">
+                <h1>StarWars Trivia</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col col-lg-12">
+                <img class="img img-responsive" src="assets/images/logo.png">
+            </div>    
+        <br>
+        <div class="row">
+            <div class="col col-xs-12 col-lg-12">
+                <button type="btn" id="begin" class="btn btn-primary btn-lg text-center">
+                        <i class="fas fa-atom"></i> Click Here to Start</button>
+            </div>
+        </div>
+        <br>
+        <div id="play">
+            <div class="row text-center">
+                <div class="col col-xs-12 col-lg-12">
+                    <h3 id="timeLeft"></h3>
+                    <br>
+                </div>
+            </div>
+            <div class="row border-primary mx-2">
+                <div class="col col-xs-12 col-lg-12">
+                    <h3 id="question1 text-center">Who said: "Why, you slimy, double-crossing, no-good swindler?</h3>
+                    <label>
+                        <input type="radio" name="q1" value="Greedo">Greedo
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value="Lando Calrissian">Lando Calrissian
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value="Obi-Wan Kenobi">Obi-Wan Kenobi
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value="Han Solo">Han Solo
+                    </label>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="row border-primary mx-2">
+                <div class="col col-xs-12 col-lg-12">
+                    <h3>When Anakin Skywalker finally became Darth Vader in "Episode III," what actor was in the suit?</h3>
+                    <label>
+                        <input type="radio" name="q2" value="David Prowse">David Prowse
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q2" value="James Earl Jones">James Earl Jones
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q2" value="Hayden Christensen">Hayden Christensen
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q2" value="Peter Mayhew">Peter Mayhew
+                    </label>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="row border-primary mx-2">
+                <div class="col col-xs-12 col-lg-12">
+                    <h3>What is Count Dooku\'s Sith name?</h3>
+                    <label>
+                        <input type="radio" name="q3" value="Darth Tyranus">Darth Tyranus
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q3" value="Darth Malak">Darth Malak
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q3" value="Darth Sidious">Darth Sidious
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q3" value="Darth Maul">Darth Maul
+                    </label>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="row border-primary mx-2">
+                <div class="col col-xs-12 col-lg-12">
+                    <h3>When Luke, Leia, and Han Solo are stuck in the trash compactor, what else is in there with them?</h3>
+                    <label>
+                        <input type="radio" name="q4" value="Gundark">Gundark
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q4" value="Anooba">Anooba
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q4" value="Dianoga">Dianoga
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q4" value="Wampa">Wampa
+                    </label>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="row border-primary mx-2">
+                <div class="col col-xs-12 col-lg-12">
+                    <h3>Was Luke skywalker's lightsaber Blue</h3>
+                    <label>
+                        <input type="radio" name="q5" value="True">True
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q5" value="False">False
+                    </label>
+                </div>
+            </div>
+            <br>
+            <div class="row border-primary mx-2">
+                <div class="col col-xs-12 col-lg-12">
+                    <h3>Who was the actor inside the C-3PO costume?</h3>
+                    <label>
+                        <input type="radio" name="q6" value="Anthony Hopkins">Anthony Hopkins
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q6" value="Kenny Baker">Kenny Baker
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q6" value="Anthony Daniels">Anthony Daniels
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q6" value="Jeff Daniels">Jeff Daniels
+                    </label>
+                    <br>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="total border-primary m-2" id = "points" >
+            <h2>
+                <strong>Time's up, Click Try Again.</strong>
+            </h2>
+            <h4 id="correct">
+                </h1>
+                <h4 id="incorrect"></h4>
+                <h4 id="unanswered"></h4>
+                <button type="btn" id="restart" value="TRY AGAIN?" class="btn btn-lg btn-primary" onClick="window.location.reload()">
+                    <i class="OneMoreTime"></i>Try Again</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</body>
+
+</html>
